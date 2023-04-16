@@ -6,6 +6,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.function.BiConsumer;
 import java.util.function.Consumer;
 import java.util.function.Supplier;
 
@@ -69,6 +70,22 @@ public class Chap04_FunctionalInterfaces_Test {
     public static <T> void processGeneric(List<T> inputs, Consumer<T> processor ){
         for (T input:inputs) {
             processor.accept(input);
+        }
+    }
+
+
+    @DisplayName(value = "BiConsumer라는 인터페이스를 이용한 함수를 구현해보는 테스트")
+    @Test
+    public void test_BiConsumer() {// 매개변수2개, 리턴이 없음.
+        BiConsumer<Integer,Double> biConsumer1 = (index,input)-> System.out.println("Processing input : "+input +" @ idx : "+index);
+        List<Integer> input2 = Arrays.asList(0,1, 2, 3, 4);
+        List<Double> inputs = Arrays.asList(0.6,1.1, 2.1, 3.4, 4.5);
+        processGeneric2(inputs,biConsumer1);
+    }
+
+    public static <T> void processGeneric2(List<T> inputs, BiConsumer<Integer,T> processor ){
+        for (int i = 0; i < inputs.size(); i++) {
+            processor.accept(i,inputs.get(i));
         }
     }
 }
