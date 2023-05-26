@@ -1,9 +1,8 @@
-package study.fastcampus.fxnalprogramming.model;
+package study.fastcampus.fxnalprogramming.part5.model;
 
-import jdk.nashorn.internal.objects.annotations.Getter;
-import jdk.nashorn.internal.objects.annotations.Setter;
-
-
+import java.util.List;
+import java.util.Objects;
+import java.util.function.Function;
 
 public class User {
     private int id;
@@ -13,8 +12,8 @@ public class User {
     }
 
     public User(int id, String name) {
-        this.id=id;
-        this.name=name;
+        this.id = id;
+        this.name = name;
     }
 
 
@@ -34,5 +33,6 @@ public class User {
     public String getName() {
         return name;
     }
+
 
 }

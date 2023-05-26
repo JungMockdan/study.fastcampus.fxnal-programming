@@ -1,4 +1,4 @@
-package study.fastcampus.fxnalprogramming.util;
+package study.fastcampus.fxnalprogramming.part4.util;
 
 @FunctionalInterface
 public interface CustomTriFuction<T,U,V,R> {

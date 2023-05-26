@@ -3,10 +3,9 @@ package study.fastcampus.fxnalprogramming.util;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
-import study.fastcampus.fxnalprogramming.model.User;
+import study.fastcampus.fxnalprogramming.part4.model.User;
 
 import java.util.*;
-import java.util.function.Consumer;
 
 /*
 *

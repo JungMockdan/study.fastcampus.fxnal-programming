@@ -1,4 +1,4 @@
-package study.fastcampus.fxnalprogramming.util;
+package study.fastcampus.fxnalprogramming.part4.util;
 
 import java.util.function.Function;
 

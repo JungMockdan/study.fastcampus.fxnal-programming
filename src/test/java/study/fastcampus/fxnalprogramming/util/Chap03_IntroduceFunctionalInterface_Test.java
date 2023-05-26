@@ -3,6 +3,8 @@ package study.fastcampus.fxnalprogramming.util;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
+import study.fastcampus.fxnalprogramming.part4.util.Adder;
+import study.fastcampus.fxnalprogramming.part4.util.CustomTriFuction;
 
 import java.util.function.BiFunction;
 import java.util.function.Function;
